@@ -7,55 +7,84 @@
 		<meta name="format-detection" content="telephone=no" />
 		<link href="style/common.css" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
 	</head>
 	<body>
 		<div>
 			<!-- header -->
-			<div class="header">
-				<div class="section-container">
-					<div class="main-header">
-						<a href="/">
-							<img
-								src="img/img-logo-bi.png"
-								srcset="img/img-logo-bi@2x.png 2x, img/img-logo-bi@3x.png 3x"
-								alt="열린기술공방"
-							/>
-						</a>
-						<ul>
-							<li class="mg-r40 active"><a href="index.html">열린기술공방 소개</a></li>
-							<li class="mg-r40"><a href="migration.html">마이그레이션</a></li>
-							<li class="mg-r40"><a href="devopsMsa.html">DevOps . MSA</a></li>
-							<li>문의하기</li>
-						</ul>
-					</div>
-					<!-- <div class="sub-menu-list">
-            <div class="sub-menu-container">
-                <ul>
-                  <li>열린기술공방 소개</li>
-                  <li>우리의 철학</li>
-                  <li>우리의 서비스</li>
-                  <li>문의하기</li>
-                </ul>
-                <ul>
-                  <li>서비스 개요</li>
-                  <li>제공 서비스</li>
-                  <li>Migration 방법론</li>
-                  <li>기술 아키텍쳐</li>
-                  <li>문의하기</li>
-                </ul>
-                <ul>
-                  <li>서비스 개요</li>
-                  <li>제공 서비스</li>
-                  <li>문의하기</li>
-                </ul>
-                <ul>
-                  <li>문의하기</li>
-                  <li>기술자료 다운로드</li>
-                </ul>
-            </div>
-          </div> -->
-				</div>
-			</div>
+			<div id="header">
+        <div class="section-container">
+          <div class="main-header">
+            <a href="/">
+              <img
+                src="img/img-logo-bi.png"
+                srcset="img/img-logo-bi@2x.png 2x, img/img-logo-bi@3x.png 3x"
+                alt="열린기술공방"
+              />
+            </a>
+            <nav id="gnb">
+              <h2 class="a11y">site navigation</h2>
+              <ul class="gnb__list">
+                <li class="gnb__item mg-r40 active">
+                  <a class="gnb__link" href="index.html">열린기술공방 소개</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="index.html#intro">열린기술공방 소개</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="index.html#philosophy">우리의 철학</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">우리의 서비스</a>
+                    </li>
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__item mg-r40">
+                  <a class="gnb__link" href="migration.html">마이그레이션</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">서비스 개요</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">제공 서비스</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">Migration 방법론</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">기술 아키텍쳐</a>
+                    </li>
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__item mg-r40">
+                  <a class="gnb__link" href="devopsMsa.html">DevOps . MSA</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">서비스 개요</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">제공 서비스</a>
+                    </li>
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__item">
+                  <span class="gnb__link">문의하기</span>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+                    <li class="sub-menu__item">
+                      <a class="sub-menu__link" href="">기술자료 다운로드</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
 			<!-- section -->
 			<div id="intro" class="continer">
@@ -164,7 +193,7 @@
 					<div class="section-container">
 						<h1 class="title">우리의 서비스</h1>
 						<div class="flex">
-							<div class="mg-l122">
+							<div>
 								<h2 class="sub-title">Open Source</h2>
 								<ul class="description">
 									<li>오픈소스 도입 방법 및 기술 가이드</li>
@@ -184,7 +213,7 @@
 				</section>
 				<section class="section-7">
 					<div class="section-container flex">
-						<div class="img-container mg-l150">
+						<div class="img-container">
 							<img
 								src="img/img-ico-service-02.png"
 								srcset="img/img-ico-service-02@2x.png 2x, img/img-ico-service-02@3x.png 3x"
@@ -203,7 +232,7 @@
 				</section>
 				<section class="section-8 bg-purple">
 					<div class="section-container flex">
-						<div class="mg-l122">
+						<div>
 							<h2 class="sub-title">MSA/DevOps</h2>
 							<ul class="description">
 								<li>AWS 클라우드, Kubernetes 기본 구축 및 환경 구성 교육</li>
@@ -222,14 +251,14 @@
 					</div>
 				</section>
 				<section class="section-9">
-					<div class="section-container">
-						<div class="img-container left mg-l150">
+					<div class="section-container flex">
+						<div class="img-container">
 							<img
 								src="img/img-ico-service-04.png"
 								srcset="img/img-ico-service-04@2x.png 2x, img/img-ico-service-04@3x.png 3x"
 							/>
 						</div>
-						<div class="right mg-r190">
+						<div>
 							<h2 class="sub-title">Atlassian</h2>
 							<ul class="description">
 								<li>Jira/Confluence를 활용한 프로젝트 스프린트 및 스크럼</li>
