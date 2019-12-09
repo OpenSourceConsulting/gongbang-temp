@@ -487,15 +487,32 @@ footer .footer-bottom .menu-item{
 }
 
 #migration .section-1{
+  padding: 32px 0 133px;
   background: #f3f3ff;
   text-align: center;
 }
-#migration .section-1 .section-container{
-  padding:133px 0 185px;
+#migration .section-1 .small-purple-img-container{
+  margin-top:125px;
 }
-#migration .section-1 .title, #migration .section-1 .sub-title{
-  color:#222222;
+#migration .section-1 .title{
+  font-size: 36px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: -1.44px;
+  text-align: center;
+  color: #222222;
+}
+#migration .section-1 .sub-title{
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.8px;
+  text-align: center;
+  color: #222222;
 }
 #migration .section-1 .sub-title{
   margin:0;
