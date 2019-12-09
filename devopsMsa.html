@@ -11,7 +11,12 @@
 	<body>
 		<div>
 			<!-- header -->
-			<div class="header">
+			<!-- 
+				TODO:
+				.header.active 
+				하면 sub-mene 가 열립니다.
+			-->
+			<div class="header active">
 				<div class="section-container">
 					<div class="main-header">
 						<a href="/">
@@ -21,39 +26,92 @@
 								alt="열린기술공방"
 							/>
 						</a>
-						<ul>
-							<li class="mg-r40"><a href="index.html">열린기술공방 소개</a></li>
-							<li class="mg-r40"><a href="migration.html">마이그레이션</a></li>
-							<li class="mg-r40 active"><a href="devopsMsa.html">DevOps . MSA</a></li>
-							<li>문의하기</li>
-						</ul>
+						<nav class="gnb">
+							<h2 class="a11y">site navigation</h2>
+							<ul class="gnb__list">
+								<li class="gnb__item mg-r40">
+									<a class="gnb__link" href="index.html">열린기술공방 소개</a>
+									<ul class="sub-menu">
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">열린기술공방 소개</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">우리의 철학</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">우리의 서비스</a>
+										</li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+									</ul>
+								</li>
+								<li class="gnb__item mg-r40">
+									<a class="gnb__link" href="migration.html">마이그레이션</a>
+									<ul class="sub-menu">
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">서비스 개요</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">제공 서비스</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">Migration 방법론</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">기술 아키텍쳐</a>
+										</li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+									</ul>
+								</li>
+								<li class="gnb__item mg-r40 active">
+									<a class="gnb__link" href="devopsMsa.html">DevOps . MSA</a>
+									<ul class="sub-menu">
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">서비스 개요</a>
+										</li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">제공 서비스</a>
+										</li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+									</ul>
+								</li>
+								<li class="gnb__item">
+									<span class="gnb__link">문의하기</span>
+									<ul class="sub-menu">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+										<li class="sub-menu__item">
+											<a class="sub-menu__link" href="">기술자료 다운로드</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
 					</div>
 					<!-- <div class="sub-menu-list">
-            <div class="sub-menu-container">
-                <ul>
-                  <li>열린기술공방 소개</li>
-                  <li>우리의 철학</li>
-                  <li>우리의 서비스</li>
-                  <li>문의하기</li>
-                </ul>
-                <ul>
-                  <li>서비스 개요</li>
-                  <li>제공 서비스</li>
-                  <li>Migration 방법론</li>
-                  <li>기술 아키텍쳐</li>
-                  <li>문의하기</li>
-                </ul>
-                <ul>
-                  <li>서비스 개요</li>
-                  <li>제공 서비스</li>
-                  <li>문의하기</li>
-                </ul>
-                <ul>
-                  <li>문의하기</li>
-                  <li>기술자료 다운로드</li>
-                </ul>
-            </div>
-          </div> -->
+						<div class="sub-menu-container">
+							<ul>
+								<li>열린기술공방 소개</li>
+								<li>우리의 철학</li>
+								<li>우리의 서비스</li>
+								<li>문의하기</li>
+							</ul>
+							<ul>
+								<li>서비스 개요</li>
+								<li>제공 서비스</li>
+								<li>Migration 방법론</li>
+								<li>기술 아키텍쳐</li>
+								<li>문의하기</li>
+							</ul>
+							<ul>
+								<li>서비스 개요</li>
+								<li>제공 서비스</li>
+								<li>문의하기</li>
+							</ul>
+							<ul>
+								<li>문의하기</li>
+								<li>기술자료 다운로드</li>
+							</ul>
+						</div>
+					</div> -->
 				</div>
 			</div>
 
