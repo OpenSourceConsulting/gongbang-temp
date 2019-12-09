@@ -265,6 +265,65 @@ ul.description li:before {
 	letter-spacing: -0.56px;
 }
 
+.service-step {
+	color: #dcdeff;
+	font-size: 19px;
+	line-height: 1.26;
+}
+
+.service-step > div {
+	width: 488px;
+	margin-right: 7.1818181818%; /* 79px  / 11000 */
+	line-height: 1.72;
+}
+
+.service-step > div p:first-child {
+	margin-bottom: 40px;
+}
+
+.service-step > div img {
+	margin-top: 104px;
+}
+
+.service-step-list li {
+	position: relative;
+	padding-left: 38px;
+	padding-bottom: 38px;
+	vertical-align: top;
+	line-height: 29px;
+}
+
+.service-step-list li::before,
+.service-step-list li::after {
+	position: absolute;
+	background-color: #7373d7;
+	content: '';
+}
+
+.service-step-list li::before {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	background-image: url(../img/img_bullet_mig_check.png);
+}
+
+.service-step-list li::after {
+	top: 0;
+	left: 14px;
+	width: 2px;
+	height: 100%;
+}
+
+.service-step-list li:last-child {
+	padding-bottom: 0;
+}
+
+.service-step-list li:last-child::after {
+	height: 0;
+}
 /* footer */
 footer .footer-contact {
 	text-align: center;
@@ -475,10 +534,6 @@ footer .footer-bottom .menu-item {
 	text-align: center;
 }
 
-#migration .section-1 {
-	background: #f3f3ff;
-	text-align: center;
-}
 #intro .section-6 .description,
 #intro .section-7 .description,
 .section-8 .description,
@@ -531,6 +586,12 @@ footer .footer-bottom .menu-item {
 	padding: 104px 0 72px;
 	text-align: center;
 }
+#migration .section-2 .title, #migration .section-2 .item-container{
+	color:#2e155f;
+}
+#migration .section-2 .section-container h1+div{
+	margin-top:44px;
+}
 #intro .section-10 .description,
 #migration .section-8 .description,
 #devopsMsa .section-6 .description {
@@ -546,9 +607,40 @@ footer .footer-bottom .menu-item {
 }
 #migration .section-2 .item-container {
 	margin-top: 90px;
+	text-align: left;
 }
+
 #migration .section-2 .item-container h2 {
 	margin: 0;
+	line-height: 1;
+}
+#migration .section-2 .item-container .item{
+	flex:1;
+}
+#migration .section-2 .item-container .item:first-child img:last-child{
+	margin-top:62px;
+}
+#migration .section-2 .item-container .item img{
+	margin-top:70px;
+} 
+#migration .section-2 .item-container .description {
+	margin-top:25px;
+	max-width: 205px;  
+	line-height: 1.38;
+  letter-spacing: -0.64px;
+}
+
+#migration .section-3 {
+	background-color: #272c85;
+	padding:100px 0 183px;
+}
+#migration .section-3 .title{
+  line-height: 1.62;
+  letter-spacing: -1.04px;
+	color: #ffffff;
+	max-width: 600px;
+	text-align: center;
+	margin: 0 auto 169px;
 }
 #intro .section-11,
 #migration .section-9,
@@ -579,21 +671,6 @@ footer .footer-bottom .menu-item {
 	bottom: 0;
 	right: 51px;
 }
-#migration .section-4 {
-	background-color: #2c3297;
-	padding: 84px 0 116px;
-	text-align: center;
-}
-
-#migration .section-5 {
-	background-color: #272c85;
-	padding: 100px 0 133px;
-}
-#migration .section-5 .title {
-	margin-bottom: 95px;
-	text-align: center;
-}
-
 #migration .section-1{
   padding: 32px 0 133px;
   background: #f3f3ff;
@@ -622,18 +699,66 @@ footer .footer-bottom .menu-item {
   text-align: center;
   color: #222222;
 }
+#migration .section-4 {
+	background-color: #2c3297;
+	padding: 84px 0 116px;
+	text-align: center;
+}
+#migration .section-4 .title{
+	color:#ffffff;
+	margin:0 auto 50px;
+	max-width:560px;
+}
+#migration .section-4 .description{
+	margin-top:36px;
+	color:#dcdeff;
+	line-height: 1.72;
+  letter-spacing: -1.08px;
+}
+#migration .section-4 .description p:first-child, #migration .section-4 .description p:nth-child(2){
+	margin-bottom:30px;
+}
+#migration .section-5 {
+	background-color: #272c85;
+	padding: 100px 0 133px;
+}
+#migration .section-5 .title {
+	margin-bottom: 95px;
+	text-align: center;
+	color:#ffffff;
+	max-width:600px;
+	margin:0 auto 95px;
+  line-height: 1.62;
+  letter-spacing: -1.04px;
+}
+#migration .section-5 .flex>div{
+	letter-spacing: -1.08px;
+	margin-top:33px;
+	width: 486px;
+	margin-right: 15.36%; /* 169px  / 11000 */
+	line-height: 1.72;
+	color:#dcdeff
+}
+#migration .section-5 .flex>div p:first-child,#migration .section-5 .flex>div p:nth-child(2){
+	margin-bottom:30px;
+}
 #migration .section-6 {
 	background-color: #f3f3ff;
 	padding: 70px 0 46px;
 }
 #migration .section-6 .item {
 	text-align: center;
+	flex:1;
 }
 #migration .section-6 .item .sub-title {
 	color: #222222;
 }
 #migration .section-6 .item .description {
 	font-size: 16px;
+	max-width: 160px;
+	margin: 0 auto;  
+	line-height: 1.5;
+  letter-spacing: -0.64px;
 }
 #migration .section-7 {
 	text-align: center;
@@ -721,65 +846,7 @@ footer .footer-bottom .menu-item {
 	padding: 0;
 }
 
-#devopsMsa .service-step {
-	color: #dcdeff;
-	font-size: 19px;
-	line-height: 1.26;
-}
 
-#devopsMsa .service-step > div {
-	width: 488px;
-	margin-right: 7.1818181818%; /* 79px  / 11000 */
-	line-height: 1.72;
-}
-
-#devopsMsa .service-step > div p:first-child {
-	margin-bottom: 40px;
-}
-
-#devopsMsa .service-step > div img {
-	margin-top: 104px;
-}
-
-#devopsMsa .service-step-list li {
-	position: relative;
-	padding-left: 38px;
-	padding-bottom: 38px;
-	vertical-align: top;
-	line-height: 29px;
-}
-
-#devopsMsa .service-step-list li::before,
-#devopsMsa .service-step-list li::after {
-	position: absolute;
-	background-color: #7373d7;
-	content: '';
-}
-
-#devopsMsa .service-step-list li::before {
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 29px;
-	height: 29px;
-	border-radius: 50%;
-	background-image: url(../img/img_bullet_mig_check.png);
-}
-
-#devopsMsa .service-step-list li::after {
-	top: 0;
-	left: 14px;
-	width: 2px;
-	height: 100%;
-}
-
-#devopsMsa .service-step-list li:last-child {
-	padding-bottom: 0;
-}
-
-#devopsMsa .service-step-list li:last-child::after {
-	height: 0;
-}
 
 #devopsMsa .section-3 .title,
 #devopsMsa .section-4 .title {
