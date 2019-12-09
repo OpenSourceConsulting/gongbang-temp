@@ -297,6 +297,10 @@ ul.description li:before {
 	transition: opacity 0.3s 0.1s;
 }
 
+.sub-menu__link {
+	display: block;
+}
+
 .header.active .sub-menu {
 	opacity: 1;
 }
