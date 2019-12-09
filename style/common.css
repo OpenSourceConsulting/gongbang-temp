@@ -339,6 +339,11 @@ footer .footer-bottom .menu-item{
   display: flex;   
   margin-top:32px;
 }
+
+#migration .sub-menu .right-li-hr{
+  border-right:1px solid #c9d2e5
+}
+
 #migration .section-1{
   background: #f3f3ff;
   text-align: center;
