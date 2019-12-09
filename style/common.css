@@ -1,3 +1,10 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body{
   padding:0;
   margin:0;
@@ -8,8 +15,6 @@ body{
   font-size:18px;
   color:#999999;
 }
-
-
 
 a{
   text-decoration: none;
@@ -31,6 +36,47 @@ ul{
 ul li{
   list-style: none;
 }
+
+/*
+  share component
+  .sub-nav
+  li (.sub-nav__item)에 .active 추가 제거 하면 됩니다.
+*/
+.sub-nav {
+  display: inline-flex;
+  align-items: center;
+  color: #5d677b;
+}
+
+.sub-nav__item {
+  position: relative;
+  padding: 0 12px;
+}
+
+.sub-nav__item:nth-child(n + 2)::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #c9d2e5;
+  content: '';
+}
+
+.sub-nav__link {
+  display: block;
+  padding: 0 16px;
+  line-height: 33px;
+}
+
+.sub-nav .active .sub-nav__link {
+  border-radius: 16px;
+  background-color: #9596c1;
+  color: #f3f3ff;
+  font-weight: bold;
+}
+
 
 .bg-purple{
   background-color: #dcdeff;
@@ -437,9 +483,18 @@ footer .footer-bottom .menu-item{
 
 /* devops / msa */
 #devopsMsa .section-1{
+  padding: 32px 0 133px;
   background: #f3f3ff;
   text-align: center;
 }
+
+#devopsMsa .sub-menu {
+  outline: 1px dashed red;
+  display: inline-flex;
+}
+
+#devopsMsa .sub-menu 
+
 #devopsMsa .section-2{
   background: #dcdeff;
   padding:95px 0 78px;
