@@ -7,16 +7,12 @@
 		<meta name="format-detection" content="telephone=no" />
 		<link href="style/common.css" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
 	</head>
 	<body>
 		<div>
-			<!-- header -->
-			<!-- 
-				TODO:
-				.header.active 
-				하면 sub-mene 가 열립니다.
-			-->
-			<div class="header active">
+			<div id="header">
 				<div class="section-container">
 					<div class="main-header">
 						<a href="/">
@@ -26,17 +22,17 @@
 								alt="열린기술공방"
 							/>
 						</a>
-						<nav class="gnb">
+						<nav id="gnb">
 							<h2 class="a11y">site navigation</h2>
 							<ul class="gnb__list">
 								<li class="gnb__item mg-r40">
 									<a class="gnb__link" href="index.html">열린기술공방 소개</a>
 									<ul class="sub-menu">
 										<li class="sub-menu__item">
-											<a class="sub-menu__link" href="">열린기술공방 소개</a>
+											<a class="sub-menu__link" href="index.html#intro">열린기술공방 소개</a>
 										</li>
 										<li class="sub-menu__item">
-											<a class="sub-menu__link" href="">우리의 철학</a>
+											<a class="sub-menu__link" href="index.html#philosophy">우리의 철학</a>
 										</li>
 										<li class="sub-menu__item">
 											<a class="sub-menu__link" href="">우리의 서비스</a>
@@ -86,32 +82,6 @@
 							</ul>
 						</nav>
 					</div>
-					<!-- <div class="sub-menu-list">
-						<div class="sub-menu-container">
-							<ul>
-								<li>열린기술공방 소개</li>
-								<li>우리의 철학</li>
-								<li>우리의 서비스</li>
-								<li>문의하기</li>
-							</ul>
-							<ul>
-								<li>서비스 개요</li>
-								<li>제공 서비스</li>
-								<li>Migration 방법론</li>
-								<li>기술 아키텍쳐</li>
-								<li>문의하기</li>
-							</ul>
-							<ul>
-								<li>서비스 개요</li>
-								<li>제공 서비스</li>
-								<li>문의하기</li>
-							</ul>
-							<ul>
-								<li>문의하기</li>
-								<li>기술자료 다운로드</li>
-							</ul>
-						</div>
-					</div> -->
 				</div>
 			</div>
 
