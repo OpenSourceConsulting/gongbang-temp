@@ -345,6 +345,7 @@ footer .footer-bottom .menu-item{
 #intro .section-9{
   background: url( "../img/img_bg_service_04.png" );
   padding:120px 0 152px;
+  position: relative;
 }
 #intro .section-10, #migration .section-8{
   background-color: #f3f4f8;
@@ -377,6 +378,16 @@ footer .footer-bottom .menu-item{
 }
 #intro .section-11 .description, #migration.section-9 .description, #devopsMsa.section-7 .description{
   margin-bottom:58px;
+}
+#intro .section-11 img, #migration .section-9 img, #devopsMsa .section-7 img{
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+
+#intro .section-11 .section-container, #migration .section-9 .section-container, #devopsMsa .section-7 .section-container{
+  position: relative;
+  height: 100%;
 }
 
 /* migration */
@@ -478,6 +489,7 @@ footer .footer-bottom .menu-item{
 #migration .section-7 .title{
   color:#2e155f;
 }
+
 
 
 
