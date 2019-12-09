@@ -7,10 +7,14 @@ body{
   font-family: 'Noto Sans KR', sans-serif;
   font-size:18px;
   color:#999999;
+  line-height: 1.89;
+  letter-spacing: -0.72px;
 }
 
 
-
+button{
+  cursor: pointer;
+}
 a{
   text-decoration: none;
   color:inherit
@@ -39,7 +43,9 @@ ul li{
 .highlight-purple{
   color:#4c44ed;
 }
-
+.highlight-light-purple{
+  color:#8f8aff
+}
 .highlight-orange{
   color:#ff8900
 }
@@ -57,6 +63,11 @@ ul li{
   border:none;  
   font-size: 18px;
   font-weight: bold;
+}
+.orange-btn:hover{
+  color:#ff8a00;
+  background: #ffffff;
+  border:1px solid #ff8a00
 }
 .big-btn{
   width: 240px;
@@ -86,6 +97,15 @@ ul li{
 .mg-r40{
   margin-right:40px;
 }
+.mg-l150{
+  margin-left:150px;
+}
+.mg-l122{
+  margin-left:122px;
+}
+.mg-r190{
+  margin-right:190px;
+}
 .vertical-hr{
   height: 119px;
   width:0px;
@@ -95,13 +115,13 @@ ul li{
 .contents{
   flex:1
 }
-.description{
-  margin:46px 0 36px;
-}
+
 .img-container{
   background: #ffffff;
   width: 192px;
   height: 192px;
+  min-width: 192px;
+  min-height:192px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -133,6 +153,18 @@ ul li{
   text-align: center;
   margin-bottom: 34px;
 }
+
+.right{
+  float:right;
+}
+.left{
+  float: left;
+}
+ul.description li:before {
+  content: "-";
+  padding-right:10px;
+}
+
 /* header */
 .header{
   position: fixed;
@@ -248,6 +280,16 @@ footer .footer-bottom .menu-item{
   padding-top:110px;
   padding-bottom: 172px;
 }
+#intro .section-1 h1{
+  line-height: 1.43;
+  letter-spacing: -1.4px;
+}
+#intro .section-1 .description{
+  margin:46px 0 36px;  
+  font-size:16px;
+  line-height: 1.44;
+  letter-spacing: -0.64px;
+}
 
 #intro .section-2 .title{
   margin-bottom:71px;
@@ -275,8 +317,16 @@ footer .footer-bottom .menu-item{
 #intro .section-5 .item{
   margin-right:230px;
 }
+#intro .section-5 .description{
+  line-height: 1.38;
+  letter-spacing: -0.64px;
+  font-size:16px;
+}
 #intro .section-6{
   padding:104px 0 120px;
+}
+#intro .section-6 ul.description li:before {
+  color:#575ea0;
 }
 #intro .section-6 .title{
   color: #2e155f;
@@ -285,21 +335,44 @@ footer .footer-bottom .menu-item{
 #intro .section-6 .sub-title, .section-8 .sub-title, .section-9 .sub-title{
   color:#4f4fda
 }
+#intro .section-6 .description, #intro .section-7 .description, .section-8 .description, .section-9 .description{
+  font-size:16px;
+  margin:0;
+  line-height: 1.5;
+  letter-spacing: -0.64px;
+}
 #intro .section-7{
   background: url( "../img/img_bg_service_02.png" );
   color:#ffffff;
   padding:121px 0 144px;
 }
+#intro .section-7 ul.description li:before {
+  color:#ffffff;
+}
 #intro .section-7 .img-container, #intro .section-9 .img-container{
-  opacity: 0.8;
+  
+  background: rgba(255, 255, 255, 0.8);
 }
 #intro .section-8{
-  padding:119px 0 112px;
+  padding:
+  119px 0 112px;
+}
+
+#intro .section-8 ul.description li:before {
+  color:#575ea0;
 }
 #intro .section-9{
   background: url( "../img/img_bg_service_04.png" );
-  padding:120px 0 152px;
-  position: relative;
+  height:464px;
+}
+#intro .section-9 .section-container{
+  padding-top:120px;
+}
+#intro .section-9 .description{
+  color:#272c85
+}
+#intro .section-9 ul.description li:before {
+  color:#7979da;
 }
 #intro .section-10, #migration .section-8{
   background-color: #f3f4f8;
@@ -308,6 +381,10 @@ footer .footer-bottom .menu-item{
 #intro .section-10 .title, #migration .section-8 .title, #devopsMsa .section-6 .title{
   color:#2e155f;
   text-align: center;
+}
+#intro .section-10 .description, #migration .section-8 .description, #devopsMsa .section-6 .description{
+  line-height: 1.6;
+  letter-spacing: -0.6px;
 }
 #intro .section-10 .item, #migration .section-8 .item, #devopsMsa .section-6 .item{
   width:340px;
@@ -323,20 +400,23 @@ footer .footer-bottom .menu-item{
   color:#2e155f;
 }
 #intro .section-11, #migration .section-9, #devopsMsa .section-7{
-  height: 579px;
+  height: 435px;
   width:100%;
   color:#4f4fda;
 }
 #intro .section-11 .title, #migration .section-9 .title, #devopsMsa .section-7 .title{
   color:#2e155f
 }
-#intro .section-11 .description, #migration.section-9 .description, #devopsMsa.section-7 .description{
+#intro .section-11 .description, #migration .section-9 .description, #devopsMsa .section-7 .description{
   margin-bottom:58px;
+}
+#intro .section-11 .contents, #migration .section-9 .contents, #devopsMsa .section-7 .contents{
+  margin-top:144px;
 }
 #intro .section-11 img, #migration .section-9 img, #devopsMsa .section-7 img{
   position: absolute;
   bottom:0;
-  right:0;
+  right:51px;
 }
 
 #intro .section-11 .section-container, #migration .section-9 .section-container, #devopsMsa .section-7 .section-container{
