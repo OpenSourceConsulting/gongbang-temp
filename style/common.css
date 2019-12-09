@@ -302,6 +302,46 @@ ul.description li:before {
 	opacity: 1;
 }
 
+.hamburger {
+	display: none;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: '';
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+}
+
+@media (max-width: 960px) {
+	.main-header {
+		align-items: center;
+	}
+
+	.gnb {
+		display: none;
+	}
+
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: space-around;
+		width: 40px;
+		height: 40px;
+	}
+}
+
 /* .sub-menu-list 주석 처리 */
 /* .sub-menu-list {
 	width: 100%;
@@ -678,11 +718,12 @@ footer .footer-bottom .menu-item {
 	padding: 104px 0 72px;
 	text-align: center;
 }
-#migration .section-2 .title, #migration .section-2 .item-container{
-	color:#2e155f;
+#migration .section-2 .title,
+#migration .section-2 .item-container {
+	color: #2e155f;
 }
-#migration .section-2 .section-container h1+div{
-	margin-top:44px;
+#migration .section-2 .section-container h1 + div {
+	margin-top: 44px;
 }
 #intro .section-10 .description,
 #migration .section-8 .description,
@@ -706,29 +747,29 @@ footer .footer-bottom .menu-item {
 	margin: 0;
 	line-height: 1;
 }
-#migration .section-2 .item-container .item{
-	flex:1;
+#migration .section-2 .item-container .item {
+	flex: 1;
 }
-#migration .section-2 .item-container .item:first-child img:last-child{
-	margin-top:62px;
+#migration .section-2 .item-container .item:first-child img:last-child {
+	margin-top: 62px;
 }
-#migration .section-2 .item-container .item img{
-	margin-top:70px;
-} 
+#migration .section-2 .item-container .item img {
+	margin-top: 70px;
+}
 #migration .section-2 .item-container .description {
-	margin-top:25px;
-	max-width: 205px;  
+	margin-top: 25px;
+	max-width: 205px;
 	line-height: 1.38;
-  letter-spacing: -0.64px;
+	letter-spacing: -0.64px;
 }
 
 #migration .section-3 {
 	background-color: #272c85;
-	padding:100px 0 183px;
+	padding: 100px 0 183px;
 }
-#migration .section-3 .title{
-  line-height: 1.62;
-  letter-spacing: -1.04px;
+#migration .section-3 .title {
+	line-height: 1.62;
+	letter-spacing: -1.04px;
 	color: #ffffff;
 	max-width: 600px;
 	text-align: center;
@@ -797,19 +838,20 @@ footer .footer-bottom .menu-item {
 	padding: 84px 0 116px;
 	text-align: center;
 }
-#migration .section-4 .title{
-	color:#ffffff;
-	margin:0 auto 50px;
-	max-width:560px;
+#migration .section-4 .title {
+	color: #ffffff;
+	margin: 0 auto 50px;
+	max-width: 560px;
 }
-#migration .section-4 .description{
-	margin-top:36px;
-	color:#dcdeff;
+#migration .section-4 .description {
+	margin-top: 36px;
+	color: #dcdeff;
 	line-height: 1.72;
-  letter-spacing: -1.08px;
+	letter-spacing: -1.08px;
 }
-#migration .section-4 .description p:first-child, #migration .section-4 .description p:nth-child(2){
-	margin-bottom:30px;
+#migration .section-4 .description p:first-child,
+#migration .section-4 .description p:nth-child(2) {
+	margin-bottom: 30px;
 }
 #migration .section-5 {
 	background-color: #272c85;
@@ -818,22 +860,23 @@ footer .footer-bottom .menu-item {
 #migration .section-5 .title {
 	margin-bottom: 95px;
 	text-align: center;
-	color:#ffffff;
-	max-width:600px;
-	margin:0 auto 95px;
-  line-height: 1.62;
-  letter-spacing: -1.04px;
+	color: #ffffff;
+	max-width: 600px;
+	margin: 0 auto 95px;
+	line-height: 1.62;
+	letter-spacing: -1.04px;
 }
-#migration .section-5 .flex>div{
+#migration .section-5 .flex > div {
 	letter-spacing: -1.08px;
-	margin-top:33px;
+	margin-top: 33px;
 	width: 486px;
 	margin-right: 15.36%; /* 169px  / 11000 */
 	line-height: 1.72;
-	color:#dcdeff
+	color: #dcdeff;
 }
-#migration .section-5 .flex>div p:first-child,#migration .section-5 .flex>div p:nth-child(2){
-	margin-bottom:30px;
+#migration .section-5 .flex > div p:first-child,
+#migration .section-5 .flex > div p:nth-child(2) {
+	margin-bottom: 30px;
 }
 #migration .section-6 {
 	background-color: #f3f3ff;
@@ -841,7 +884,7 @@ footer .footer-bottom .menu-item {
 }
 #migration .section-6 .item {
 	text-align: center;
-	flex:1;
+	flex: 1;
 }
 #migration .section-6 .item .sub-title {
 	color: #222222;
@@ -849,9 +892,9 @@ footer .footer-bottom .menu-item {
 #migration .section-6 .item .description {
 	font-size: 16px;
 	max-width: 160px;
-	margin: 0 auto;  
+	margin: 0 auto;
 	line-height: 1.5;
-  letter-spacing: -0.64px;
+	letter-spacing: -0.64px;
 }
 #migration .section-7 {
 	text-align: center;
@@ -984,7 +1027,6 @@ footer .footer-bottom .menu-item {
 	width: 2px;
 	height: 100%;
 }
-
 
 #devopsMsa .section-3 .title,
 #devopsMsa .section-4 .title {
