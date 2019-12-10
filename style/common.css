@@ -332,7 +332,7 @@ ul.description li:before {
 }
 
 .sub-menu {
-	visibility: hidden;
+	display: none;
 	opacity: 0;
 	margin-top: 38px;
 	color: #e8eaef;
@@ -348,19 +348,28 @@ ul.description li:before {
 }
 
 #header.active .sub-menu {
-	animation: snb-anim 0.3s forwards;
+	display: block;
+	animation: snb-anim 0.3s 0.1s forwards;
+}
+
+.gnb__close {
+	display: none;
+	position: absolute;
+	top: calc(64px / 2);
+	right: calc(80px / 2);
+	width: calc(50px / 2);
+	height: calc(50px / 2);
+	padding: 0;
+	border: 0;
+	background: url(../img/btn-close.png) no-repeat center center / contain;
 }
 
 @keyframes snb-anim {
 	0% {
-		visibility: hidden;
 		opacity: 0;
 	}
-	1% {
-		visibility: visible;
-	}
+
 	100% {
-		visibility: visible;
 		opacity: 1;
 	}
 }
@@ -369,7 +378,6 @@ ul.description li:before {
 	hamburger
 */
 .hamburger {
-	/* outline: 1px dashed; */
 	display: none;
 	padding: 0;
 	border: 0;
@@ -391,6 +399,10 @@ ul.description li:before {
 	background-color: #aaa7ab;
 }
 
+/* ==================================
+mobile header
+.header (.active) class로 #gnb 활성화
+================================== */
 @media (max-width: 960px) {
 	#header {
 		padding: calc(46px / 2) 0 calc(27px / 2);
@@ -415,7 +427,7 @@ ul.description li:before {
 		content: '';
 	}
 
-	.show-gnb .main-header::after {
+	.active .main-header::after {
 		display: block;
 	}
 
@@ -435,11 +447,11 @@ ul.description li:before {
 		margin-top: 0;
 		padding: calc(250px / 2) 0 0 calc(94px / 2);
 		background-color: #fff;
-		width: calc(610px / 2);
+		width: 70%;
 		transition: transform 0.34s;
 	}
 
-	.show-gnb #gnb {
+	.active #gnb {
 		transform: translateX(0);
 	}
 
@@ -449,7 +461,10 @@ ul.description li:before {
 
 	.gnb__item {
 		height: auto;
-		margin-bottom: calc(115px / 2);
+	}
+
+	.gnb__item:nth-chind(n + 2) {
+		margin-top: calc(115px / 2);
 	}
 
 	.gnb__item.active {
@@ -476,14 +491,7 @@ ul.description li:before {
 	}
 
 	.gnb__close {
-		position: absolute;
-		top: calc(64px / 2);
-		right: calc(80px / 2);
-		width: calc(50px / 2);
-		height: calc(50px / 2);
-		padding: 0;
-		border: 0;
-		background: url(../img/btn-close.png) no-repeat center center / contain;
+		display: block;
 	}
 
 	.hamburger {
