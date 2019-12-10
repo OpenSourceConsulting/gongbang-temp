@@ -466,6 +466,21 @@ ul.description li:before {
 .service-step-list li:last-child::after {
 	height: 0;
 }
+/* 마이그레이션 방법론 */
+.utol_03 .wrap {overflow:hidden; zoom:1; padding:80px 0;}
+.utol_03 .wrap>div {width:33.33%; float:left;}
+.utol_03 .wrap>div>* {padding:0 3px;}
+.utol_03 .utol_anal li {padding:10px; text-align:center; border:1px solid #000; margin-bottom:6px; font-size:15px; line-height:20px; font-weight:300; position:relative;}
+.utol_03 .utol_anal li.fake {border:0;}
+.utol_03 .utol_anal li.two {overflow:hidden; zoom:1; border:0; padding:0;display: flex;justify-content: space-between;}
+.utol_03 .utol_anal li.two p {padding:10px 2%; width:46%; border:1px solid #ddd;}
+.utol_03 .utol_anal li span.num {width:20px; line-height:20px; text-align:center; height:20px; border-radius:10px; font-size:12px; color:#fff; background-color:#1754de; display:block; position:absolute; top:50%; left:10px; margin-top:-10px;}
+.utol_03 .utol_anal li span.pd {padding-left:30px; display:block;}
+.utol_03 .utol_anal li span.tag {position:absolute; top:50%; margin-top:-20px; right:10px; width:75px; display:block; padding:10px 0; background-color:#b4bec8; color:#fff; border-radius:5px;}
+.utol_03 .utol_anal li.blue {border-color:#1754de; color:#1754de; font-weight:500;}
+.utol_03 .point_list {padding:20px 10px 0 10px !important;}
+.utol_03 .point_list li {font-size:15px; line-height:25px;}
+.utol_03 .point_list li.title {font-size:20px; line-height:25px; font-weight:400; margin-bottom:10px;}
 /* footer */
 footer .footer-contact {
 	padding-top: 28px;
@@ -1202,6 +1217,15 @@ footer .footer-bottom .menu-item {
 	background-color: #d9dae1;
 	padding: 105px 0 96px;
 }
+
+@media screen and (max-width:1024px) {
+	.utol_03 .wrap>div {width:auto; float:none; padding-bottom:50px; margin-bottom:50px; border-bottom:2px solid #000;}
+	.utol_03 .wrap>div:last-child {margin:0; padding:0; border:0;}
+	.utol_03 .utol_anal li.fake {display:none;}
+	.utol_03 .utol_anal li br {display:none !important;}
+	.utol_03 .utol_anal li.blue {height:auto !important;}
+	.utol_03 .utol_anal li span.tag {border-radius:0; right:0;}
+	}
 
 @media screen and (max-width: 965px) {
 	#intro .section-5 .flex {
