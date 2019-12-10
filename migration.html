@@ -91,12 +91,12 @@
     <!-- section -->
     <div id="migration" class="continer">
       <section class="section-1">
-          <ul class="sub-nav">
+          <!-- <ul class="sub-nav">
               <li class="sub-nav__item active"><a class="sub-nav__link" href="">서비스 개요</a></li>
               <li class="sub-nav__item"><a class="sub-nav__link" href="">제공 서비스</a></li>
               <li class="sub-nav__item"><a class="sub-nav__link" href="">Migration 방법론</a></li>
               <li class="sub-nav__item"><a class="sub-nav__link" href="">기술 아키텍쳐</a></li>
-            </ul>
+            </ul> -->
         <div class="section-container">
           <div class="small-purple-img-container">
             <img src="img/img_ico_service_02_wh.png">
@@ -158,12 +158,12 @@
           </div>
         </div>
       </section>
-      <section class="section-3">
+      <section class="section-3"  id="tab-01-contents">
           <div class="section-container">
             <div class="num-img-container">
               <img class="mg-r34" src="img/img-mig-num-01-on.png">
-              <img class="mg-r34" src="img/img-mig-num-02-off.png">
-              <img class="mg-r34" src="img/img-mig-num-03-off.png">
+              <img class="mg-r34" src="img/img-mig-num-02-off.png" id="tab-02">
+              <img src="img/img-mig-num-03-off.png" id="tab-03">
             </div>
             <h2 class="title">
               열린기술공방을 통해 마이그레이션 방법론에 따른
@@ -195,12 +195,12 @@
            </div>
           </div>
       </section>
-      <section class="section-4">
+      <section class="section-4" id="tab-02-contents">
         <div class="section-container">
           <div class="num-img-container">
-            <img class="mg-r34" src="img/img-mig-num-01-off.png">
+            <img class="mg-r34" src="img/img-mig-num-01-off.png" id="tab-01">
             <img class="mg-r34" src="img/img-mig-num-02-on.png">
-            <img class="mg-r34" src="img/img-mig-num-03-off.png">
+            <img src="img/img-mig-num-03-off.png" id="tab-03">
           </div>
           <h2 class="title">
             열린기술공방에서 프라이빗/퍼블릭 클라우드
@@ -218,18 +218,19 @@
           </div>
         </div>
       </section>
-      <section class="section-5">
+      <section class="section-5" id="tab-03-contents">
         <div class="section-container">
           <div class="num-img-container">
-            <img class="mg-r34" src="img/img-mig-num-01-off.png">
-            <img class="mg-r34" src="img/img-mig-num-02-off.png">
-            <img src="img/img-mig-num-03-on.png">
+            <img class="mg-r34" src="img/img-mig-num-01-off.png" id="tab-01">
+            <img class="mg-r34" src="img/img-mig-num-02-off.png" id="tab-02">
+            <img src="img/img-mig-num-03-on.png" id="tab-03" >
           </div>
           <h2 class="title">
             열린기술공방에서 오픈소스 선택 방법과
             구축/운영방안에 대한 기술을 내재화하세요.
           </h2>
-          <div class="flex">
+          <div class="flex reverse">
+            <img src="img/img-mig-ser-3.png">
             <div>
               <p>
                 오픈소스로 전환한다는 것은 단지 업무 시스템만을 리눅스 기반환경으로 옮기는 것을 의미하지 않습니다.
@@ -240,7 +241,6 @@
               </p>
               <p>열린기술공방과의 협업을 통해 최적화된 인프라 환경을 구축하세요.</p>
             </div>
-            <img src="img/img-mig-ser-3.png">
           </div>
         </div>
       </section>
@@ -296,7 +296,7 @@
           <p>열린기술공방이 제안하는 마이그레이션 방법론</p>
         </div>
       </section>
-      <section class="section-10">
+      <section class="section-8">
         <div class="section-container">
           <h1 class="title">서비스 관련 기술자료 <span class="highlight-orange">다운로드</span></h1>
           <div class="flex">
@@ -365,11 +365,15 @@
     <footer>
       <div class="footer-contact">
         <div class="section-container">
-          <img src="img/img-ico-sns-1.png">
-          <img src="img/img-ico-sns-2.png">
-          <img src="img/github.png">
-          <img src="img/vector-smart-object.png">
-          <button class="family-site-btn">Family Site</button>  
+          <div>
+              <img src="img/logo-facebook.png" />
+              <img src="img/youtube.png" />
+              <img src="img/github.png" />
+              <img src="img/vector-smart-object.png" />
+          </div>
+          <div>
+            <button class="family-site-btn">Family Site<img src="img/btn-listbox-off.png"></button>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -402,7 +406,8 @@
             </ul>
           </div>
           <div class="item">
-            <div>문의처 +82 - 2-516-0711</div>
+            <img src="img/footer_copy_Logo.png">
+            <div><span>문의처</span> +82 - 2-516-0711</div>
             <div>sales@osci.kr</div>
           </div>
         </div> 
