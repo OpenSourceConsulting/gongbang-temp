@@ -16,10 +16,11 @@
 	<body>
 		<div>
 			<!-- header -->
-			<div id="header" class="active">
+			<!-- TODO: .show-gnb 로 모바일 gnb 활성화 -->
+			<div id="header">
         <div class="section-container">
           <div class="main-header">
-            <a href="/">
+            <a class="logo" href="/">
               <img
                 src="img/img-logo-bi.png"
                 srcset="img/img-logo-bi@2x.png 2x, img/img-logo-bi@3x.png 3x"
@@ -83,8 +84,13 @@
                     </li>
                   </ul>
                 </li>
-              </ul>
-            </nav>
+							</ul>
+							<button class="gnb__close" type="button"><span class="a11y">close</span></button>
+						</nav>
+						<button class="hamburger">
+							<span class="a11y">site navigation open</span>
+							<span></span>
+						</button>
           </div>
         </div>
       </div>
