@@ -60,6 +60,15 @@ p {
 	margin: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
 /*
   share component
   .sub-nav
@@ -525,30 +534,29 @@ footer .footer-bottom .menu-item {
 
 /* intro */
 #intro .section-1 {
+	position: relative;
 	height: 658px;
-	/* padding-top: 110px; */
-	/* padding-bottom: 198px; */
-	/* width: 100%; */
 	color: #ffffff;
-	background-image: url('../img/img_bg_mainvisual_back.svg');
+	background: url('../img/img_bg_mainvisual_back.svg') no-repeat center top / cover;
+}
+
+#intro .section-1 .section-1-svg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 #intro .section-1 .section-container {
 	padding-top: 115px;
 }
 
-/* #intro .section-1::after {
-	display: block;
-	height: 202px;
-	background: #fff url(../img/img-bg-main-visual-btm.png) no-repeat center top;
-	content: '';
-} */
-
 #intro .section-1 .hero {
 	justify-content: space-between;
 }
 
 #intro .section-1 h1 {
+	margin-bottom: 0;
 	line-height: 1.43;
 	letter-spacing: -1.4px;
 }
@@ -557,6 +565,38 @@ footer .footer-bottom .menu-item {
 	font-size: 1.6rem;
 	line-height: 1.44;
 	letter-spacing: -0.64px;
+}
+
+@media (max-width: 960px) {
+	#intro .section-1 {
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	#intro .section-1 .section-container {
+		padding-top: 45px;
+	}
+
+	#intro .section-1 .section-1-svg {
+		display: none;
+	}
+
+	#intro .section-1 .hero {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#intro .section-1 .hero > div {
+		margin-bottom: 40px;
+	}
+
+	#intro .section-1 .description {
+		margin-top: 22px;
+	}
+
+	#intro .section-1 .orange-btn {
+		font-size: 1.4rem;
+	}
 }
 
 #intro .section-2 {
@@ -568,6 +608,17 @@ footer .footer-bottom .menu-item {
 	margin-bottom: 71px;
 	line-height: 1;
 }
+
+#intro .section-2 p:first-of-type {
+	margin-bottom: 48px;
+}
+
+@media (max-width: 960px) {
+	#intro .section-2 p br {
+		display: none;
+	}
+}
+
 #intro .section-3 {
 	background-image: url('../img/img-bg-about-01.png');
 	background-repeat: no-repeat;
@@ -578,6 +629,17 @@ footer .footer-bottom .menu-item {
 #intro .section-4 {
 	padding: 68px 0 244px;
 }
+
+#intro .section-4 p:first-of-type {
+	margin-bottom: 59px;
+}
+
+@media (max-width: 960px) {
+	#intro .section-4 p br {
+		display: none;
+	}
+}
+
 #intro .section-5 {
 	background-color: #fff2e2;
 	padding: 56px 0 84px;

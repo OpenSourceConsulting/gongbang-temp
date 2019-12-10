@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.0" id="_-e-img_bg_mainvisual_back" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" viewBox="0 0 1596 658" style="enable-background:new 0 0 1596 658;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#2A114D;}
-	.st1{fill:#260D39;}
-	.st2{fill:#2E155F;}
-</style>
-<g>
-	<polygon class="st0" points="1149.3,0 0,467.7 0,527 141.7,573.3 1550.3,0 	"/>
-</g>
-<g>
-	<polygon class="st1" points="0,0 0,467.7 1149.3,0 	"/>
-</g>
-<path class="st2" d="M442,653l1155-125l-1-528h-45.7L141.7,573.3L386,653C386,653,396.5,662.1,442,653z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1597 658">
+  <defs>
+    <style>
+      .cls-1{fill:#2a114d}
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="_-e-img_bg_mainvisual_back" data-name="-e-img bg mainvisual back">
+      <path class="cls-1" d="M0 0h1596v658H0z"/>
+      <path fill="#2e155f" d="M1597 528l-1-528h-45.66L174 584 0 527v131h1596V528.11l1-.11z"/>
+      <path fill="#260d39" d="M0 0v523L1149.34 0H0z"/>
+      <path class="cls-1" d="M1149.34 0L0 523v135L1550.34 0h-401z"/>
+    </g>
+  </g>
 </svg>
