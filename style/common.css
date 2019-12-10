@@ -510,6 +510,9 @@ footer .footer-contact .section-container div:first-child {
 footer .footer-contact .section-container div:first-child img {
 	margin-right: 28px;
 }
+footer .footer-contact .section-container div:last-child {
+	position: relative;
+}
 footer .footer-contact .section-container div:last-child img {
 	margin-left: 11px;
 }
@@ -523,7 +526,26 @@ footer .footer-contact .family-site-btn {
 	color: #ffffff;
 	vertical-align: text-bottom;
 }
-
+#family-site-list{
+	width: 204px;
+  border-radius: 4px;
+  border: solid 1px #bfc1c5;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 54px;
+	display: none;
+}
+#family-site-list li{
+	padding-left:26px;
+	font-size: 14px;
+  text-align: left;
+	color: #545b66;
+	height: 32px;
+}
+#family-site-list li:hover{
+  background-color: #d2d2ff;
+  color: #3c3ccb;
+}
 footer .footer-bottom {
 	width: 100%;
 	padding-bottom: 90px;
@@ -1370,6 +1392,10 @@ footer .footer-bottom .menu-item {
 	}
 	footer .footer-contact .section-container div:first-child img {
 		margin: 0;
+	}
+	footer .footer-contact .section-container div:last-child {
+		width:204px;
+		margin:0 auto;
 	}
 	footer .footer-bottom .section-container {
 		flex-wrap: wrap;

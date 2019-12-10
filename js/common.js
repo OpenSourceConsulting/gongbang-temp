@@ -48,4 +48,8 @@ $(document).ready(function(){
     $("#tab-03-contents").css("display", "none");
     $("#tab-02-contents").css("display", "block");
   });
+
+  $("#family-site-btn").click(function(){
+    $("#family-site-list").toggle();
+  });
 });
