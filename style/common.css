@@ -4,16 +4,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	font-size: 62.5%;
-}
-
-@media (max-width: 960px) {
-	html {
-		font-size: 8px;
-	}
-}
-
 body {
 	padding: 0;
 	margin: 0;
@@ -21,7 +11,7 @@ body {
 	height: 100%;
 	background-color: #ffffff;
 	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 1.8rem;
+	font-size: 18px;
 	/* font-size: 18px; */
 	color: #999999;
 	line-height: 1.89;
@@ -41,12 +31,10 @@ h3 {
 	margin-top: 0;
 }
 h2 {
-	/* font-size: 26px; */
-	font-size: 2.6rem;
+	font-size: 26px;
 }
 h3 {
-	/* font-size: 20px; */
-	font-size: 2rem;
+	font-size: 20px;
 }
 ul {
 	margin: 0;
@@ -255,6 +243,7 @@ ul.description li:before {
 
 /* header */
 #header {
+	outline: 1px dashed;
 	position: fixed;
 	top: 0;
 	background: #ffffff;
@@ -270,6 +259,7 @@ ul.description li:before {
 	top: 100%;
 	left: 0;
 	right: 0;
+	overflow: hidden;
 	height: 0;
 	background-color: rgba(78, 57, 255, 0.8);
 	content: '';
@@ -284,6 +274,7 @@ ul.description li:before {
 	height: 100%;
 }
 #header .section-container .main-header {
+	outline: 1px dashed red;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -328,6 +319,10 @@ ul.description li:before {
 	border-bottom: solid 5px #645cff;
 }
 
+.gnb__item:last-child .gnb__link {
+	min-width: 101px;
+}
+
 .gnb__link {
 	display: block;
 	height: 100%;
@@ -339,12 +334,12 @@ ul.description li:before {
 }
 
 .sub-menu {
+	visibility: hidden;
+	opacity: 0;
 	margin-top: 38px;
 	color: #e8eaef;
-	font-size: 1.4rem;
+	font-size: 14px;
 	font-weight: 300;
-	opacity: 0;
-	transition: opacity 0.3s 0.1s;
 }
 
 .sub-menu__link {
@@ -355,7 +350,21 @@ ul.description li:before {
 }
 
 #header.active .sub-menu {
-	opacity: 1;
+	animation: snb-anim 0.3s forwards;
+}
+
+@keyframes snb-anim {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	1% {
+		visibility: visible;
+	}
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 /*
@@ -422,7 +431,7 @@ ul.description li:before {
 
 .service-step {
 	color: #dcdeff;
-	font-size: 1.9rem;
+	font-size: 19px;
 	line-height: 1.26;
 }
 
@@ -575,7 +584,7 @@ footer .footer-bottom .menu-item {
 }
 #intro .section-1 .description {
 	margin: 46px 0 36px;
-	font-size: 1.6rem;
+	font-size: 16px;
 	line-height: 1.44;
 	letter-spacing: -0.64px;
 }
@@ -608,7 +617,7 @@ footer .footer-bottom .menu-item {
 	}
 
 	#intro .section-1 .orange-btn {
-		font-size: 1.4rem;
+		font-size: 14px;
 	}
 }
 
