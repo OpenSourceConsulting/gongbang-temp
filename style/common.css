@@ -165,6 +165,7 @@ em {
 }
 
 .section-container {
+	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
@@ -292,6 +293,14 @@ ul.description li:before {
 /* debug */
 .debug {
 	outline: 1px dashed red;
+}
+
+.anchor {
+	/* outline: 1px dashed red; */
+	position: absolute;
+	top: -156px; /* header height: 146px + margin: 10px */
+	width: 2px;
+	height: 10px;
 }
 
 .bg-cover {
@@ -660,6 +669,11 @@ footer .footer-bottom .menu-item {
 	padding: 56px 0 84px;
 	color: #2e155f;
 }
+
+#intro .section-5 .anchor {
+	top: calc(-156px - 200px);
+}
+
 #intro .section-5 h2 {
 	line-height: 1.2;
 }
