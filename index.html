@@ -4,10 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 		<link href="style/common.css" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.min.js"></script>
 		<script type="text/javascript" src="js/common.js"></script>
 	</head>
 	<body>
@@ -274,7 +277,7 @@
 					<div class="section-container">
 						<h1 class="title">서비스 관련 기술자료 <span class="highlight-orange">다운로드</span></h1>
 						<div class="flex">
-							<div class="item mg-r34">
+							<div class="item mg-r34" data-aos="fade-up" data-aos-delay="100">
 								<img
 									src="img/img_ssppt_01.png"
 									srcset="img/img-ssppt-01@2x.png 2x, img/img-ssppt-01@3x.png 3x"
@@ -288,7 +291,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="item mg-r34">
+							<div class="item mg-r34" data-aos="fade-up" data-aos-delay="200">
 								<img
 									src="img/img-ssppt-02.png"
 									srcset="img/img-ssppt-02@2x.png 2x, img/img-ssppt-02@3x.png 3x"
@@ -303,7 +306,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item" data-aos="fade-up" data-aos-delay="300">
 								<img
 									src="img/img-ssppt-03.png"
 									srcset="img/img-ssppt-03@2x.png 2x, img/img-ssppt-03@3x.png 3x"
@@ -382,6 +385,14 @@
 					</div>
 				</div>
 			</footer>
-		</div>
+    </div>
+    <script>
+        AOS.init({
+          duration: 600,
+          offset: 0,
+          delay: 100,
+          easing: 'ease-out-quad',
+        });
+    </script>
 	</body>
 </html>
