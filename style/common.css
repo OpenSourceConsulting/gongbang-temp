@@ -334,6 +334,10 @@ ul.description li:before {
 	cursor: pointer;
 }
 
+.gnb__link:hover {
+	color: #645cff;
+}
+
 .sub-menu {
 	margin-top: 38px;
 	color: #e8eaef;
