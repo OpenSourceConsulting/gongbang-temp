@@ -920,7 +920,8 @@ footer .footer-bottom .menu-item {
 #intro .section-10 .item,
 #migration .section-8 .item,
 #devopsMsa .section-6 .item {
-	width: 340px;
+	width:100%;
+	max-width: 340px;
 	height: 462px;
 	background-color: #ffffff;
 }
