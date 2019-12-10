@@ -498,7 +498,7 @@ footer .footer-contact .family-site-btn {
 
 footer .footer-bottom {
 	width: 100%;
-	height: 370px;
+	padding-bottom: 90px;
 	padding-top: 70px;
 	background-color: #151515;
 }
@@ -1259,6 +1259,17 @@ footer .footer-bottom .menu-item {
 	#devopsMsa .section-7 .section-container img {
 		width: 33%;
 	}
+	#migration .section-2 .flex {
+		flex-wrap: wrap;
+	}
+	#migration .section-2 .item {
+		flex: none !important;
+		width: 100%;
+		text-align: center;
+	}
+	#migration .section-2 .item-container .description {
+		max-width: none;
+	}
 	#migration .section-5 .flex {
 		display: block;
 		text-align: center;
@@ -1318,6 +1329,20 @@ footer .footer-bottom .menu-item {
 	footer .footer-contact .section-container div:first-child img {
 		margin: 0;
 	}
+	footer .footer-bottom .section-container {
+		flex-wrap: wrap;
+	}
+	footer .footer-bottom .item {
+		flex: none;
+		width: 50%;
+		text-align: center;
+	}
+	footer .footer-bottom .item:first-child {
+		margin-bottom: 80px;
+	}
+	footer .footer-bottom .menu-item {
+		text-align: center;
+	}
 }
 @media screen and (max-width: 600px) {
 	#migration .section-6 .item {
@@ -1331,5 +1356,12 @@ footer .footer-bottom .menu-item {
 	}
 	#devopsMsa .section-2 .item:last-of-type {
 		margin: 50px auto 0;
+	}
+	footer .footer-bottom {
+		padding-bottom: 0;
+	}
+	footer .footer-bottom .item {
+		width: 100%;
+		margin-bottom: 80px;
 	}
 }
