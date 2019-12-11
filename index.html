@@ -15,9 +15,7 @@
 	</head>
 	<body>
 		<div>
-			<!-- header -->
-			<!-- TODO: .active 로 모바일 gnb 활성화 -->
-			<div id="header" class="active">
+			<div id="header">
         <div class="section-container">
           <div class="main-header">
             <a class="logo" href="/">
@@ -73,18 +71,18 @@
 									</ul>
                 </li>
                 <li class="gnb__item">
-                  <span class="gnb__link">문의하기</span>
+                  <span class="gnb__link"><a href="mailto:contact@sharingtechlabs.com">문의하기</a></span>
                   <ul class="sub-menu">
-                    <li class="sub-menu__item"><a class="sub-menu__link" href="">문의하기</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="mailto:contact@sharingtechlabs.com">문의하기</a></li>
                     <li class="sub-menu__item">
-                      <a class="sub-menu__link" href="">기술자료 다운로드</a>
+                      <a class="sub-menu__link" href="/#doc-download">기술자료 다운로드</a>
                     </li>
                   </ul>
                 </li>
 							</ul>
-							<button class="gnb__close" type="button"><span class="a11y">close</span></button>
+							<button id="mobile-menu-close" class="gnb__close" type="button"><span class="a11y">close</span></button>
 						</nav>
-						<button class="hamburger">
+						<button id="mobile-menu" class="hamburger">
 							<span class="a11y">site navigation open</span>
 							<span></span>
 						</button>
@@ -316,6 +314,7 @@
 				</section>
 				<section class="section-10">
 					<div class="section-container">
+							<span class="anchor" id="doc-download"></span>
 						<h1 class="title" data-aos="fade-up" data-aos-delay="100">서비스 관련 기술자료 <span class="highlight-orange">다운로드</span></h1>
 						<div class="flex">
 							<div class="item mg-r34" data-aos="fade-up" data-aos-delay="100">
@@ -393,8 +392,8 @@
 							<button id="family-site-btn" class="family-site-btn">Family Site<img src="img/btn-listbox-off.png" /></button>
 							<ul id="family-site-list">
 								<li><a href="www.osci.kr" taget="_blank">오픈소스컨설팅</a></li>
-								<li><a href="https://www.play-ce.io/wasup.html" taget="_blank"></a>Playce WA sup</a></li>
-								<li><a href="https://www.play-ce.io/roro.html" taget="_blank"></a>Playce RoRo</a></li>
+								<li><a href="https://www.play-ce.io/wasup.html" taget="_blank">Playce WA sup</a></li>
+								<li><a href="https://www.play-ce.io/roro.html" taget="_blank">Playce RoRo</a></li>
 							</ul>
 						</div>
 					</div>
@@ -418,7 +417,7 @@
 							</ul>
 						</div>
 						<div class="item">
-							<div class="menu-title">DevOps/MSA Consulting</div>
+							<div class="menu-title">DevOps/MSA</div>
 							<ul class="menu-item">
 								<li><a href="devopsMsa.html#devops-service-intro">서비스 개요</a></li>
 								<li><a href="devopsMsa.html#devops-service-provide">제공 서비스</a></li>

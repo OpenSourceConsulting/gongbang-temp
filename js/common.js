@@ -1,14 +1,24 @@
 $(document).ready(function() {
-  $('#header #gnb>ul>li>a').mouseenter(function(){
+  $('#header #gnb a').mouseenter(function(){
 		$('#header').addClass('active');
   });
 
   $('#header').mouseleave(function(){
 		$('#header').removeClass('active');
   });
+
+  $('#mobile-menu').click(function(){
+    $('#header').addClass('active');
+  });
+
+  $('#mobile-menu-close').click(function(){
+		$('#header').removeClass('active');
+  });
 })
 
 $(document).ready(function(){
+
+
   $("#devopsMsa #tab-01").click(function(){
       $("#tab-02-contents").css("display", "none");
       $("#tab-01-contents").css("display", "block");

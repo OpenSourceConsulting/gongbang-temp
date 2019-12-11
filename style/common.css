@@ -12,7 +12,6 @@ body {
 	background-color: #ffffff;
 	font-family: 'NotoSansCJKkr', sans-serif;
 	font-size: 18px;
-	/* font-size: 18px; */
 	color: #999999;
 	line-height: 1.89;
 	letter-spacing: -0.72px;
@@ -158,9 +157,7 @@ em {
 /* ==================================
 mobile 
 ================================== */
-.continer {
-	margin-top: 72px;
-}
+
 
 .section-container {
 	position: relative;
@@ -329,6 +326,7 @@ ul.description li:before {
 .gnb__item {
 	height: 50px;
 	cursor: pointer;
+	min-width:91px;
 }
 .gnb__item.active {
 	border-bottom: solid 5px #645cff;
@@ -355,6 +353,7 @@ ul.description li:before {
 	color: #e8eaef;
 	font-size: 14px;
 	font-weight: 300;
+	min-width: 91px;
 }
 
 .sub-menu__link {
@@ -437,7 +436,9 @@ mobile header
 	.main-header {
 		align-items: center;
 	}
-
+	.continer {
+		margin-top: 72px;
+	}
 	.main-header::after {
 		display: none;
 		position: fixed;
@@ -516,6 +517,7 @@ mobile header
 
 	.gnb__close {
 		display: block;
+		cursor: pointer;
 	}
 
 	.hamburger {
@@ -806,6 +808,7 @@ footer .footer-bottom .menu-item {
 	font-size: 16px;
 	line-height: 1.44;
 	letter-spacing: -0.64px;
+	font-weight: 300;
 }
 
 @media (max-width: 960px) {
@@ -1514,7 +1517,8 @@ footer .footer-bottom .menu-item {
 	}
 }
 
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 960px) {
+
 	#intro .section-5 .flex {
 		flex-direction: column;
 		align-items: center;
@@ -1572,6 +1576,9 @@ footer .footer-bottom .menu-item {
 	#migration .section-9 .section-container img,
 	#devopsMsa .section-7 .section-container img {
 		width: 33%;
+	}
+	#migration .section-1 .small-purple-img-container, #devopsMsa .section-1 .small-purple-img-container{
+		margin-top:70px;
 	}
 	#migration .section-2 .flex {
 		flex-wrap: wrap;
