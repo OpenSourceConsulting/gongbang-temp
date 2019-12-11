@@ -10,7 +10,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: #ffffff;
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'NotoSansCJKkr', sans-serif;
 	font-size: 18px;
 	/* font-size: 18px; */
 	color: #999999;
@@ -29,6 +29,9 @@ h1,
 h2,
 h3 {
 	margin-top: 0;
+}
+h1{
+	font-size:35px;
 }
 h2 {
 	font-size: 26px;
@@ -161,6 +164,7 @@ em {
 .description-section {
 	text-align: center;
 }
+
 .flex {
 	display: flex;
 }
@@ -765,7 +769,9 @@ footer .footer-bottom .menu-item {
 	color: #ffffff;
 	background: url('../img/img_bg_mainvisual_back.svg') no-repeat center top / cover;
 }
-
+#intro .section-1 h1{
+  font-weight: 300;
+}
 #intro .section-1 .section-1-svg {
 	position: absolute;
 	bottom: 0;
@@ -832,7 +838,9 @@ footer .footer-bottom .menu-item {
 #intro .section-2 .title {
 	margin-top: 0;
 	margin-bottom: 71px;
-	line-height: 1;
+	line-height: 1.17;
+	letter-spacing: -1.44px;
+	color:#222222;
 }
 
 #intro .section-2 p:first-of-type {
@@ -855,7 +863,10 @@ footer .footer-bottom .menu-item {
 #intro .section-4 {
 	padding: 68px 0 244px;
 }
-
+#intro .section-4 h1{
+	line-height: 1.37;
+	letter-spacing: -1.4px;
+}
 #intro .section-4 p:first-of-type {
 	margin-bottom: 59px;
 }
@@ -877,7 +888,8 @@ footer .footer-bottom .menu-item {
 }
 
 #intro .section-5 h2 {
-	line-height: 1.2;
+	line-height: 1.85;
+	letter-spacing: -1.04px;
 }
 #intro .section-5 .item:first-child,
 #intro .section-5 .item:nth-child(2) {
@@ -900,6 +912,8 @@ footer .footer-bottom .menu-item {
 .section-8 .sub-title,
 .section-9 .sub-title {
 	color: #4f4fda;
+	line-height: 1.62;
+	letter-spacing: -1.04px;
 }
 #intro .section-6 .section-container > div {
 	margin-top: 96px;
@@ -927,6 +941,8 @@ footer .footer-bottom .menu-item {
 #intro .section-8 h2,
 #intro .section-9 h2 {
 	margin-bottom: 20px;
+	line-height: 1.62;
+	letter-spacing: -1.04px;
 }
 #intro .section-8 {
 	padding: 119px 0 112px;
@@ -953,6 +969,8 @@ footer .footer-bottom .menu-item {
 #devopsMsa .section-6 .title {
 	color: #2e155f;
 	text-align: center;
+	line-height: 1.37;
+	letter-spacing: -1.4px;
 }
 #intro .section-10 .item,
 #migration .section-8 .item,
@@ -1009,6 +1027,7 @@ footer .footer-bottom .menu-item {
 	line-height: 1.38;
 	letter-spacing: -0.64px;
 	font-size: 16px;
+	font-weight: 300;
 }
 #intro .section-6 {
 	padding: 104px 0 120px;
@@ -1019,6 +1038,8 @@ footer .footer-bottom .menu-item {
 #intro .section-6 .title {
 	color: #2e155f;
 	text-align: center;
+	line-height: 1.37;
+	letter-spacing: -1.4px;
 }
 
 #intro .section-6 .description,
@@ -1029,6 +1050,7 @@ footer .footer-bottom .menu-item {
 	margin: 0;
 	line-height: 1.5;
 	letter-spacing: -0.64px;
+	font-weight: 300;
 }
 #intro .section-7 {
 	background: url('../img/img_bg_service_02.png');
@@ -1092,6 +1114,7 @@ footer .footer-bottom .menu-item {
 #devopsMsa .section-6 .description {
 	line-height: 1.6;
 	letter-spacing: -0.6px;
+	font-weight: 300;
 }
 #intro .section-10 .item,
 #migration .section-8 .item,
@@ -1159,6 +1182,10 @@ footer .footer-bottom .menu-item {
 #migration .section-9 .description,
 #devopsMsa .section-7 .description {
 	margin-bottom: 58px;
+	font-size: 22px;
+  font-weight: 300;
+  line-height: 2.18;
+  letter-spacing: -0.88px;
 }
 #intro .section-11 img,
 #migration .section-9 img,
@@ -1480,9 +1507,12 @@ footer .footer-bottom .menu-item {
 	#intro .section-5 .flex .item > div > h2 {
 		margin: 0;
 		position: absolute;
-		bottom: 1;
-		bottom: -6px;
+		bottom: -3px;
 		left: 67px;
+	}
+	#intro .section-5 .flex .item:nth-child(2),
+	#intro .section-5 .flex .item:nth-child(3){
+		margin-left:25px;
 	}
 	#intro .section-6 .flex,
 	#intro .section-7 .flex,
@@ -1554,6 +1584,9 @@ footer .footer-bottom .menu-item {
 	}
 	#devopsMsa .section-2 .title {
 		margin: 0 0 50px;
+	}
+	#devopsMsa .section-2 .description{
+		margin-bottom:20px;
 	}
 	#migration .section-3 .title,
 	#migration .section-4 .title,
