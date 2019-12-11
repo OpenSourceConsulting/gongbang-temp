@@ -172,6 +172,7 @@ mobile
 .flex {
 	display: flex;
 }
+
 .reverse {
 	flex-direction: row-reverse;
 }
@@ -818,7 +819,7 @@ footer .footer-bottom .menu-item {
 	}
 
 	#intro .section-1 .section-container {
-		padding-top: 45px;
+		padding-top: 60px;
 	}
 
 	#intro .section-1 .section-1-svg {
@@ -909,9 +910,8 @@ footer .footer-bottom .menu-item {
 	line-height: 1.85;
 	letter-spacing: -1.04px;
 }
-#intro .section-5 .item:first-child,
-#intro .section-5 .item:nth-child(2) {
-	margin-right: 230px;
+#intro .section-5 .flex{
+	justify-content: space-between;
 }
 #intro .section-5-title {
 	color: #2e155f;
@@ -1000,7 +1000,7 @@ footer .footer-bottom .menu-item {
 #intro .section-10 .item .item-description-container,
 #migration .section-8 .item .item-description-container,
 #devopsMsa .section-6 .item .item-description-container {
-	padding-left: 27px;
+	padding:15px 25px 0;
 	font-size: 15px;
 }
 #intro .section-10 .item .item-description-container .item-description-title,
@@ -1046,6 +1046,7 @@ footer .footer-bottom .menu-item {
 	letter-spacing: -0.64px;
 	font-size: 16px;
 	font-weight: 300;
+	max-width: 175px;
 }
 #intro .section-6 {
 	padding: 104px 0 120px;
@@ -1517,6 +1518,7 @@ footer .footer-bottom .menu-item {
 	}
 }
 
+
 @media screen and (max-width: 960px) {
 
 	#intro .section-5 .flex {
@@ -1537,10 +1539,11 @@ footer .footer-bottom .menu-item {
 		position: absolute;
 		bottom: -3px;
 		left: 67px;
+		line-height: 1.2;
 	}
 	#intro .section-5 .flex .item:nth-child(2),
 	#intro .section-5 .flex .item:nth-child(3){
-		margin-left:25px;
+		margin-left:15px;
 	}
 	#intro .section-6 .flex,
 	#intro .section-7 .flex,
@@ -1578,7 +1581,7 @@ footer .footer-bottom .menu-item {
 		width: 33%;
 	}
 	#migration .section-1 .small-purple-img-container, #devopsMsa .section-1 .small-purple-img-container{
-		margin-top:70px;
+		margin-top:45px;
 	}
 	#migration .section-2 .flex {
 		flex-wrap: wrap;
@@ -1628,6 +1631,7 @@ footer .footer-bottom .menu-item {
 	}
 	.service-step > div {
 		margin-right: 0;
+		width:100%;
 	}
 	.service-step > div:first-child {
 		margin-bottom: 70px;
