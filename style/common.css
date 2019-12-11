@@ -155,6 +155,13 @@ em {
 	margin-top: 146px;
 }
 
+/* ==================================
+mobile 
+================================== */
+.continer {
+	margin-top: 72px;
+}
+
 .section-container {
 	position: relative;
 	max-width: 1200px;
@@ -296,6 +303,12 @@ ul.description li:before {
 	height: 10px;
 }
 
+@media (max-width: 960px) {
+	.ahchor {
+		top: -82px;
+	}
+}
+
 .bg-cover {
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -410,10 +423,15 @@ mobile header
 @media (max-width: 960px) {
 	#header {
 		padding: calc(46px / 2) 0 calc(27px / 2);
+		height: auto;
 	}
 
 	#header::after {
 		display: none;
+	}
+
+	#header .section-container {
+		padding: 0 31px;
 	}
 
 	.main-header {
@@ -464,10 +482,11 @@ mobile header
 	}
 
 	.gnb__item {
+		margin-right: 0;
 		height: auto;
 	}
 
-	.gnb__item:nth-chind(n + 2) {
+	.gnb__item:nth-child(n + 2) {
 		margin-top: calc(115px / 2);
 	}
 
@@ -492,6 +511,7 @@ mobile header
 		opacity: 1;
 		color: #2e155f;
 		font-size: calc(24px / 2);
+		line-height: 2;
 	}
 
 	.gnb__close {
@@ -507,25 +527,6 @@ mobile header
 		height: calc(47px / 2);
 	}
 }
-
-/* .sub-menu-list 주석 처리 */
-/* .sub-menu-list {
-	width: 100%;
-	height: 306px;
-	opacity: 0.8;
-	background-color: #4e39ff;
-	color: #e8eaef;
-	font-size: 14px;
-}
-.sub-menu-list .sub-menu-container {
-	max-width: 1200px;
-	padding: 0 50px;
-	display: flex;
-	margin: 0 auto;
-	justify-content: flex-end;
-	line-height: 2;
-	letter-spacing: -0.56px;
-} */
 
 .service-step {
 	color: #dcdeff;
@@ -885,6 +886,12 @@ footer .footer-bottom .menu-item {
 
 #intro .section-5 .anchor {
 	top: calc(-156px - 200px);
+}
+
+@media (max-width: 960px) {
+	#intro .section-5 .anchor {
+		top: calc(-86px - 200px);
+	}
 }
 
 #intro .section-5 h2 {
