@@ -538,8 +538,14 @@ mobile header
 	width: 488px;
 	margin-right: 7.1818181818%; /* 79px  / 11000 */
 	line-height: 1.72;
+	flex: 1 0 auto;
 }
 
+.service-step > div p{
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: -1.08px;
+}
 .service-step > div p:first-child {
 	margin-bottom: 40px;
 }
@@ -554,6 +560,7 @@ mobile header
 	padding-bottom: 38px;
 	vertical-align: top;
 	line-height: 29px;
+	letter-spacing: -1.14px;
 }
 
 .service-step-list li::before,
@@ -664,6 +671,7 @@ mobile header
 }
 .utol_03 .point_list {
 	padding: 20px 10px 0 10px !important;
+	text-align: left;
 }
 .utol_03 .point_list li {
 	font-size: 15px;
@@ -1112,6 +1120,8 @@ footer .footer-bottom .menu-item {
 #migration .section-2 .title,
 #migration .section-2 .item-container {
 	color: #2e155f;
+	line-height: 1.37;
+	letter-spacing: -1.4px;
 }
 #migration .section-2 .section-container h1 + div {
 	margin-top: 44px;
@@ -1134,6 +1144,7 @@ footer .footer-bottom .menu-item {
 #migration .section-2 .item-container {
 	margin-top: 90px;
 	text-align: left;
+	letter-spacing: -1.04px;
 }
 
 #migration .section-2 .item-container h2 {
@@ -1154,6 +1165,8 @@ footer .footer-bottom .menu-item {
 	max-width: 205px;
 	line-height: 1.38;
 	letter-spacing: -0.64px;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 #migration .section-3 {
@@ -1240,12 +1253,15 @@ footer .footer-bottom .menu-item {
 	color: #ffffff;
 	margin: 0 auto 50px;
 	max-width: 560px;
+	line-height: 1.62;
+	letter-spacing: -1.04px;
 }
 #migration .section-4 .description {
 	margin-top: 36px;
 	color: #dcdeff;
 	line-height: 1.72;
 	letter-spacing: -1.08px;
+	font-weight: 300;
 }
 #migration .section-4 .description p:first-child,
 #migration .section-4 .description p:nth-child(2) {
@@ -1276,6 +1292,7 @@ footer .footer-bottom .menu-item {
 	margin-right: 15.36%; /* 169px  / 11000 */
 	line-height: 1.72;
 	color: #dcdeff;
+	font-weight: 300;
 }
 #migration .section-5 .flex > div p:first-child,
 #migration .section-5 .flex > div p:nth-child(2) {
@@ -1291,6 +1308,9 @@ footer .footer-bottom .menu-item {
 }
 #migration .section-6 .item .sub-title {
 	color: #222222;
+	margin-top:23px;
+	font-size: 19px;
+	line-height: 2.21;
 }
 #migration .section-6 .item .description {
 	font-size: 16px;
@@ -1298,12 +1318,16 @@ footer .footer-bottom .menu-item {
 	margin: 0 auto;
 	line-height: 1.5;
 	letter-spacing: -0.64px;
+	font-weight: 300;
 }
 #migration .section-7 {
 	text-align: center;
+	padding: 104px 0 76px;
 }
 #migration .section-7 .title {
 	color: #2e155f;
+	line-height: 1.37;
+	letter-spacing: -1.4px;
 }
 
 /* devops / msa */
@@ -1319,6 +1343,9 @@ footer .footer-bottom .menu-item {
 #migration .section-1 .title,
 #devopsMsa .section-1 .title {
 	margin-top: 34px;
+  line-height: 1.17;
+  letter-spacing: -1.44px;
+  color: #222222;
 }
 #devopsMsa .section-1 .sub-title {
 	margin-top: 11px;
@@ -1326,6 +1353,8 @@ footer .footer-bottom .menu-item {
 	font-size: 30px;
 	font-weight: bold;
 	color: #222;
+	line-height: 1.4;
+	letter-spacing: -1.8px;
 }
 
 #devopsMsa .section-1 p {
@@ -1349,9 +1378,11 @@ footer .footer-bottom .menu-item {
 #devopsMsa .section-2 .title {
 	margin-right: 21.8181818182%; /*240px / 1100px */
 	line-height: 1.37;
+	letter-spacing: -1.4px;
 }
 #devopsMsa .section-2 h2 {
 	line-height: 1;
+	letter-spacing: -1.04px;
 }
 #devopsMsa .section-2 .info-service-wrap {
 	width: 100%;
@@ -1371,6 +1402,8 @@ footer .footer-bottom .menu-item {
 #devopsMsa .section-2 .description {
 	font-size: 16px;
 	line-height: 1.38;
+	margin-bottom:62px;
+	font-weight: 300;
 }
 
 #devopsMsa .section-3 {
@@ -1383,33 +1416,11 @@ footer .footer-bottom .menu-item {
 	padding: 100px 0 50px;
 }
 
-#devopsMsa .service-step {
-	color: #dcdeff;
-	font-size: 19px;
-	line-height: 1.26;
-}
-
-#devopsMsa .service-step > div {
-	width: 488px;
-	margin-right: 7.1818181818%; /* 79px  / 11000 */
-	line-height: 1.72;
-}
-
-#devopsMsa .service-step > div p:first-child {
-	margin-bottom: 40px;
-}
 
 #devopsMsa .service-step > div img {
 	margin-top: 104px;
 }
 
-#devopsMsa .service-step-list li {
-	position: relative;
-	padding-left: 38px;
-	padding-bottom: 38px;
-	vertical-align: top;
-	line-height: 29px;
-}
 
 #devopsMsa .service-step-list li::before,
 #devopsMsa .service-step-list li::after {
@@ -1440,6 +1451,8 @@ footer .footer-bottom .menu-item {
 	margin-bottom: 169px;
 	color: #fff;
 	text-align: center;
+	line-height: 1.62;
+	letter-spacing: -1.04px;
 }
 #devopsMsa .section-3 .box-container,
 #devopsMsa .section-4 .box-container {
@@ -1451,6 +1464,8 @@ footer .footer-bottom .menu-item {
 	text-align: center;
 	border-radius: 10px;
 	margin-top: 54px;
+	font-weight: 300;
+	color: #dcdeff;
 }
 #devopsMsa .section-5 {
 	background: #f3f3ff;
@@ -1459,6 +1474,8 @@ footer .footer-bottom .menu-item {
 }
 #devopsMsa .section-5 .title {
 	color: #2e155f;
+	line-height: 1.37;
+  letter-spacing: -1.4px;
 }
 #devopsMsa .section-5 img {
 	margin-top: 73px;
